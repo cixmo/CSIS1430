@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+div.container h1,h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div.container h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+}
+
+div.container__section {
+    background-color: #252525;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+div.container__content {
+    height: 230px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid rgb(184, 184, 184);
+    box-sizing: inherit;
+}
+
+div.container__content p {
+    background-color:rgba(41, 41, 41, 0.8);
+    padding: 8px;
+    text-indent: 15px;
+    line-height: 20px;
+}
+
+div.header__content {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px rgb(1, 40, 77);
+    margin-top: 0px;
+}
+
+div#batman { background: url("../img/batman.jpg") no-repeat center; }
+div#wonderwoman { background: url("../img/wonder-woman.jpg") no-repeat center; }
+div#superman { background: url("../img/superman.jpg") no-repeat center; }
+div#spiderman { background: url("../img/spiderman.jpg") no-repeat center; }
+div#iron-man { background: url("../img/ironman.jpg") no-repeat center; }
+div#thor { background: url("../img/thor.jpg") no-repeat center; }
+
+span.reference {font-style: italic;}
+span.hide {display: none;}
