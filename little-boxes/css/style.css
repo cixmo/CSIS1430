@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Amatic SC", sans-serif;
+    color: #FFFFFF;
+}
+
+.container { background-color: #014449; height: 700px; width: 600px; margin: 20px auto; box-sizing: border-box; }
+.container__title {
+    height: 50px;
+    width: auto;
+    padding: 5px 0 5px 0;
+    box-sizing: inherit;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center; }
+
+div.viewport {
+    background-image: linear-gradient(#014449, #45ADA8);
+    height: 640px;
+    width: 590px;
+    box-sizing: inherit;
+    padding: 10px;
+    margin:5px;
+    overflow: hidden;
+}
+
+.object { float: left; clear: both; position: relative; }
+.circle { border-radius: 50%; }
+.star { background-color: #FFFFFF; box-shadow: 0 0 3px 3px #FFFFFF; }
+.land { background-color: #6B8F0B; opacity: 0.5; width: 450px; height: 450px; }
+
+#moon {
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to bottom right, #FFFFFF, #F4F1ED);
+    box-shadow: 0 0 40px 20px #E2E2E2;
+}
+
+#moon div.crater {
+    background-image: linear-gradient(to bottom right, #C5CFC6, #F4F1ED);
+    box-shadow: -2px -2px 8px 1px #D2D2D2;
+}
+
+#moon-crater-1 { width: 90px; height: 90px; top: 35px; left: 40px; }
+#moon-crater-2 { width: 30px; height: 30px; top: -65px; left: 150px; }
+#moon-crater-3 { width: 70px; height: 70px;top: 6px; left: 130px; }
+#moon-crater-4 { width: 40px; height: 40px;top: -30px; left: 70px; }
+#dipper-star-1 { width: 5px; height: 5px; top: -210px; left: 525px; }
+#dipper-star-2 { width: 3px; height: 3px; top: -200px; left: 478px; }
+#dipper-star-3 { width: 3px; height: 3px; top: -170px; left: 438px; }
+#dipper-star-4 { width: 5px; height: 5px; top: -120px; left: 398px; }
+#dipper-star-5 { width: 2px; height: 2px; top: -150px; left: 368px; }
+#dipper-star-6 { width: 2px; height: 2px; top: -90px; left: 319px; }
+#dipper-star-7 { width: 2px; height: 2px; top: -70px; left: 369px; }
+
+.planet {
+    opacity: 0.9;
+}
+
+#ozone {
+    background-image: radial-gradient(circle, #3B8686, #FFC48C);
+    border-radius: 50%;
+    box-shadow: 0 0 30px 15px #FFC48C;
+    top:  8px;
+    left: -200px;
+    width: 900px;
+    height: 900px;
+    opacity: 0.9;
+}
+
+#earth {
+    overflow: hidden;
+    background-image: radial-gradient(circle, #4DBCE9, #2A8FBD);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 30px #2A8FBD;
+    top:  -850px;
+    left: -170px;
+    width: 850px;
+    height: 950px;
+    
+}
+
+#land-1 {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    top:  -50px;
+    left: -70px;
+}
+
+#land-2 {
+    clip-path: polygon(30% 0%, 100% 0%, 100% 60%, 65% 60%, 0% 95%, 20% 30%, 30% 20%);
+    top:  -450px;
+    left: 400px;
+}
