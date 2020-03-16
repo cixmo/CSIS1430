@@ -1,27 +1,46 @@
-<!DOCTYPE html>
-<html  lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="utf-8"/>
-        <title>Contact Us - Pizza Parlor</title>
+        <title>Contact Us - The Pizza Lab</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     </head>
     <body>
-        <h1>Contact Us</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <form action="http://www.stonecoldprofessor.com/1430/pizza-form/contact-process.php" method="POST">
-            <p><label for="first-name">First Name:</label><br>
-                <input name="first-name" id="first-name" type="text" /></p>
-            <p><label for="last-name">Last Name:</label><br>
-                <input name="last-name" id="last-name" type="text" /></p>
-            <p><label for="email">Email Address:</label><br>
-                <input name="email" id="email" type="text" /></p>
-            <p><label for="message">Message:</label><br>
-                <textarea name="message" id="message" rows="20" cols="70"></textarea></p>
-            <p><input type="submit" value="Send" /><input type="reset" value="Clear" /></p>
-        </form>
+        <div id="container">
+            <div id="header" class="element">
+                <h1>The Pizza Lab</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="main" class="element">
+                <h1>Contact Us</h1>
+                <div id="content" class="element">
+                    <img src="./img/contact.jpg"  />
+                    <p>At the Lab,  we tend to sometimes lose touch with what matters the most: <em>our customers</em>.  When we recieve feedback on our products and services, it drives us to provide better service and products.  Please feel free to reach out to us at anytime and let us know what to love and hate about the Pizza Lab.</p>
+                    <h2>Send Us a Message</h2>
+                    <form action="http://www.stonecoldprofessor.com/1430/pizza-form/contact-process.php" method="POST">
+                        <div class="label-above">
+                            <label for="first-name">First Name:</label>
+                            <input name="first-name" id="first-name" type="text" />
+                            <label for="last-name">Last Name:</label>
+                            <input name="last-name" id="last-name" type="text" />
+                            <label for="email">Email Address:</label>
+                            <input name="email" id="email" type="text" />
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" rows="20" cols="70"></textarea>
+                            <input type="submit" value="Send" />
+                            <input type="reset" value="Clear" />
+                            <div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">&copy 2020, The Pizza Lab</div>
+        </div>
     </body>
 </html>

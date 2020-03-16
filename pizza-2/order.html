@@ -1,16 +1,167 @@
-<!DOCTYPE html>
-<html  lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="utf-8"/>
-        <title>Order Page - Pizza Parlor</title>
+        <title>Order Now - The Pizza Lab</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     </head>
     <body>
-        <h1>Order</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <div id="container">
+            <div id="header" class="element">
+                <h1>The Pizza Lab</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html" class="current">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Order a Delicious Pizza</h1>
+                <div id="content">
+                    <img src="./img/order.jpg" class="rounded" />
+                    <p>Fill out the form below to order a delicious pizza from the Pizza Lab.  Begin by providing your contact information and delivery address.  Afterward, build your tasty pizza and click submit to send it over to the lab. Fields with <span class="required">*</span> are required to be completed before submitting the order form over to one of our Lab Associates.</span></p>
+                    <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="POST">
+                        <h2>Customer and Delivery Details</h2>
+                        <div class="two-col label-above">
+                            <h3>Customer Information</h3>
+                            <label for="customer_first">First Name:</label>
+                            <input type="text" id="customer_first" name="first" />
+                            <label for="customer_last">Last Name:</label>
+                            <input type="text" id="customer_last" name="last" />
+                            <label for="customer_phone">Phone Number: <span class="required">*</span></label>
+                            <input type="text" id="customer_phone" name="phone" required />
+                            <label for="customer_email">Email Address: <span class="required">*</span></label>
+                            <input type="text" id="customer_email" name="email" required />
+                        </div>
+                        <div class="two-col label-above">
+                            <h3>Delivery Address</h3>
+                            <label for="address_street">Street Address: <span class="required">*</span></label>
+                            <input type="text" id="address_street" name="add1" required />
+                            <label for="address_number">Apartment / Suite / Room Number:</label>
+                            <input type="text" id="address_number" name="add2" />
+                            <label for="address_city">City: <span class="required">*</span></label>
+                            <input type="text" id="address_city" name="city" required />
+                            <label for="address_state">State: <span class="required">*</span></label>
+                            <select id="address_state" name="state" required>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New Youk</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT" selected>Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <label for="address_zip">Zip Code: <span class="required">*</span></label>
+                            <input type="text" id="address_zip" name="zip" required />
+                        </div>
+                        <h2>Build Your Pizza</h2>
+                        <div class="four-col label-side">
+                            <h3>Step 1 : Choose Your Size</h3>
+                            <label for="size_slice"><input type="radio" id="size_slice" name="size" value="Slice"> Slice</label>
+                            <label for="size_slab"><input type="radio" id="size_slab" name="size" value="Slab"> Slab</label>
+                            <label for="size_personal"><input type="radio" id="size_personal" name="size" value="Personal"> Personal</label>
+                            <label for="size_small"><input type="radio" id="size_small" name="size" value="Small"> Small</label>
+                            <label for="size_medium"><input type="radio" id="size_medium" name="size" value="Medium"> Medium</label>
+                            <label for="size_large"><input type="radio" id="size_large" name="size" value="Large"> Large</label>
+                            <label for="size_xlarge"><input type="radio" id="size_xlarge" name="size" value="X Large"> X Large</label>
+                            <label for="size_xxlarge"><input type="radio" id="size_xxlarge" name="size" value="XX Large"> XX Large</label>
+                            <label for="size_party"><input type="radio" id="size_party" name="size" value="Party"> Party</label>
+                        </div>
+                        <div class="four-col label-side">
+                            <h3>Step 2 : Choose Your Crust</h3>
+                            <label for="crust_pan"><input type="radio" id="crust_pan" name="crust" value="Pan"> Pan</label>
+                            <label for="crust_thin"><input type="radio" id="crust_thin" name="crust" value="Thin"> Thin</label>
+                            <label for="crust_thick"><input type="radio" id="crust_thick" name="crust" value="Thick"> Thick</label>
+                            <label for="crust_deep"><input type="radio" id="crust_deep" name="crust" value="Deep Dish"> Deep Dish</label>
+                            <label for="crust_hand"><input type="radio" id="crust_hand" name="crust" value="Hand Tossed"> Hand Tossed</label>
+                            <label for="crust_calzone"><input type="radio" id="crust_calzone" name="crust" value="Calzone"> Calzone</label>
+                            <label for="crust_gf"><input type="radio" id="crust_gf" name="crust" value="Gluten Free"> Gluten Free</label>
+                            <label for="crust_califlower"><input type="radio" id="crust_califlower" name="crust" value="Califlower"> Califlower</label>
+                            <label for="crust_bagel"><input type="radio" id="crust_bagel" name="crust" value="Bagel"> Bagel</label>
+                        </div>
+                        <div class="four-col label-side">
+                            <h3>Step 3 : Choose Your Meats</h3>
+                            <label for="meats_pepperoni"><input type="checkbox" id="meats_pepperoni" name="toppings[]" value="Pepperoni"> Pepperoni</label>
+                            <label for="meats_sausage"><input type="checkbox" id="meats_pepperoni" name="toppings[]" value="Sausage"> Sausage</label>
+                            <label for="meats_ham"><input type="checkbox" id="meats_ham" name="toppings[]" value="Ham"> Ham</label>  
+                            <label for="meats_bacon"><input type="checkbox" id="meats_bacon" name="toppings[]" value="Bacon"> Bacon</label>
+                            <label for="meats_cbacon"><input type="checkbox" id="meats_cbacon" name="toppings[]" value="Canadian Bacon"> Canadian Bacon</label>  
+                            <label for="meats_beef"><input type="checkbox" id="meats_beef" name="toppings[]" value="Beef"> Beef</label>  
+                            <label for="meats_turkey"><input type="checkbox" id="meats_turkey" name="toppings[]" value="Turkey"> Turkey</label>  
+                            <label for="meats_tofu"><input type="checkbox" id="meats_tofu" name="toppings[]" value="Tofo"> Tofo </label>  
+                            <label for="meats_chicken"><input type="checkbox" id="meats_chicken" name="toppings[]" value="Chicken"> Chicken</label>  
+                            <label for="meats_meatball"><input type="checkbox" id="meats_meatball" name="toppings[]" value="Meatball"> Meatball</label>
+                            <label for="meats_anchovy"><input type="checkbox" id="meats_anchovy" name="toppings[]" value="Anchovy"> Anchovy</label>  
+                        </div>
+                        <div class="four-col label-side">
+                            <h3>Step 4 : Choose Your Veggies</h3>
+                            <label for="veggies_spinach"><input type="checkbox" id="veggies_spinach" name="toppings[]" value="Spinach"> Spinach</label>
+                            <label for="veggies_mushroom"><input type="checkbox" id="veggies_mushroom" name="toppings[]" value="Mushroom"> Mushroom</label>
+                            <label for="veggies_olive"><input type="checkbox" id="veggies_olive" name="toppings[]" value="Olive"> Olive</label>
+                            <label for="veggies_onion"><input type="checkbox" id="veggies_onion" name="toppings[]" value="Onion"> Onion</label>
+                            <label for="veggies_bellp"><input type="checkbox" id="veggies_bellp" name="toppings[]" value="Bell Pepper"> Bell Pepper</label>
+                            <label for="veggies_tomato"><input type="checkbox" id="veggies_tomato" name="toppings[]" value="Tomato"> Tomato</label> 
+                            <label for="veggies_pineapple"><input type="checkbox" id="veggies_pineapple" name="toppings[]" value="Pineapple"> Pineapple</label> 
+                            <label for="veggies_jalapeno"><input type="checkbox" id="veggies_jalapeno" name="toppings[]" value="Jalapeno"> Jalapeno</label>
+                            <label for="veggies_bananap"><input type="checkbox" id="veggies_bananap" name="toppings[]" value="Banana Pepper"> Banana Pepper</label> 
+                            <label for="veggies_ghostp"><input type="checkbox" id="veggies_ghostp" name="toppings[]" value="Ghost Pepper"> Ghost Pepper</label> 
+                            <label for="veggies_artichoke"><input type="checkbox" id="veggies_artichoke" name="toppings[]" value="Artichoke"> Artichoke</label>
+                            <label for="veggies_garlic"><input type="checkbox" id="veggies_garlic" name="toppings[]" value="Garlic"> Garlic</label>
+                            <label for="veggies_zucchini"><input type="checkbox" id="veggies_zucchini" name="toppings[]" value="Zucchini"> Zucchini</label>
+                        </div>
+                        <div class="order one-col">
+                            <h3>Special Instructions / Comments</h3>
+                            <textarea id="comments" rows="10" name="comments"></textarea>
+                            <input type="submit" value="Order" />
+                            <input type="reset" value="Clear Form" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">&copy 2020, The Pizza Lab</div>
+        </div>
     </body>
 </html>
