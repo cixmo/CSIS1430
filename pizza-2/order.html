@@ -18,8 +18,8 @@
             <div id="main">
                 <h1>Order a Delicious Pizza</h1>
                 <div id="content">
-                    <img src="./img/order.jpg" class="rounded" />
-                    <p>Fill out the form below to order a delicious pizza from the Pizza Lab.  Begin by providing your contact information and delivery address.  Afterward, build your tasty pizza and click submit to send it over to the lab. Fields with <span class="required">*</span> are required to be completed before submitting the order form over to one of our Lab Associates.</span></p>
+                    <img src="./img/order.jpg" alt="Order Now" class="rounded" />
+                    <p>Fill out the form below to order a delicious pizza from the Pizza Lab.  Begin by providing your contact information and delivery address.  Afterward, build your tasty pizza and click submit to send it over to the lab. Fields with <span class="required">*</span> are required to be completed before submitting the order form over to one of our Lab Associates.</p>
                     <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="POST">
                         <h2>Customer and Delivery Details</h2>
                         <div class="two-col label-above">
@@ -43,6 +43,7 @@
                             <input type="text" id="address_city" name="city" required />
                             <label for="address_state">State: <span class="required">*</span></label>
                             <select id="address_state" name="state" required>
+                                <option value="">Unknown</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -125,7 +126,7 @@
                         <div class="four-col label-side">
                             <h3>Step 3 : Choose Your Meats</h3>
                             <label for="meats_pepperoni"><input type="checkbox" id="meats_pepperoni" name="toppings[]" value="Pepperoni"> Pepperoni</label>
-                            <label for="meats_sausage"><input type="checkbox" id="meats_pepperoni" name="toppings[]" value="Sausage"> Sausage</label>
+                            <label for="meats_sausage"><input type="checkbox" id="meats_sausage" name="toppings[]" value="Sausage"> Sausage</label>
                             <label for="meats_ham"><input type="checkbox" id="meats_ham" name="toppings[]" value="Ham"> Ham</label>  
                             <label for="meats_bacon"><input type="checkbox" id="meats_bacon" name="toppings[]" value="Bacon"> Bacon</label>
                             <label for="meats_cbacon"><input type="checkbox" id="meats_cbacon" name="toppings[]" value="Canadian Bacon"> Canadian Bacon</label>  
@@ -161,7 +162,7 @@
                     </form>
                 </div>
             </div>
-            <div id="footer">&copy 2020, The Pizza Lab</div>
+            <div id="footer">&copy; 2020, The Pizza Lab</div>
         </div>
     </body>
 </html>
