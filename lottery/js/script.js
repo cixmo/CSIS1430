@@ -18,7 +18,7 @@ function generate() {
             }
             lotto.sort(function(a,b){return a-b});
             document.getElementById("output-title").innerHTML = "Your Lotto Numbers are: ";
-            document.getElementById("output").innerHTML = lotto;
+            document.getElementById("output").innerHTML = lotto.join('-');
             document.getElementById("button").innerHTML = "Regenerate";
             console.log(lotto);
             break;
