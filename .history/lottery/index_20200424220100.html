@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Lottery Game &gt; Michael Williams</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="main" class="container column">
+        <div class="title slab">Lotto Number Generator</div>
+        <div class="wrapper row">
+            <div class="label">Enter Total:</div>
+            <div class="form">
+                <form><input id="amount" type="number" name="amount" min="1" max="10" placeholder="1-10"></form>
+            </div>
+            <button type="button" class="button" id="generate" onclick="generate()">Generate</button>
+        </div>
+        <div class="wrapper-error">Acceptable number range is between 1 and 10.</div>
+        <div class="output slab"><span id="output-title"></span><br><span id="output"></span></div>
+    </div>
+</body>
+</html>
