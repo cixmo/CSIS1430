@@ -1,10 +1,12 @@
 # Editor Files
 .vscode/*
+.history/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+
 
 # OS Generated
 .DS_Store
