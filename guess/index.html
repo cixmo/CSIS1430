@@ -6,41 +6,41 @@
     <script src="js/script.js"></script>
 </head>
 <body class="container col center" onload="onLoad()">
-    <header class="o1">the guessing game</header>
-    <main id="viewport-start" class="o2 container center col">
+    <div class="o1 header">the guessing game</div>
+    <div id="viewport-start" class="o2 container center col viewport">
         <div class="o1 center"> <button id="button-start" type="button" onclick="gameReset()">Start</button></div>
-    </main>
-    <main id="viewport-stop" class="o2 container center col">
+    </div>
+    <div id="viewport-stop" class="o2 container center col viewport">
         <div id="stop-heading" class="o1 container center"></div>
         <div id="stop-message" class="o2 container center"></div>
         <div class="o3 center"><button id="button-new" type="button" onclick="gameReset()">Restart</button></div>
-    </main>
-    <main id="viewport-game" class="o2 container col" >
-        <section id="hud" class="o1 g1 container col">
-            <section id="hud-data" class="o1 g1 container row center wrap">
+    </div>
+    <div id="viewport-game" class="o2 container col viewport" >
+        <div id="hud" class="o1 g1 container col">
+            <div id="hud-data" class="o1 g1 container row center wrap">
                 <div id="hud-1" class="o1 s33 g1 hud-data">6</div>
                 <div id="hud-2" class="o2 s33 g1 hud-data">4</div>
                 <div id="hud-3" class="o3 s33 g1 hud-data">7</div>
-            </section>
-            <section id="hud-label" class="o2 g1 container row center wrap">
+            </div>
+            <div id="hud-label" class="o2 g1 container row center wrap">
                 <div class="o1 s33 g1">guess total</div>
                 <div class="o2 s33 g1">guesses left</div>
                 <div class="o3 s33 g1">games played</div>
-            </section>
-        </section>
-        <section id="return-heading" class="o2 g2 container center">Too High</section>
-        <section id="return-message" class="o3 g3 container center">You are very close to the number. Try Again.</section>
-        <section id="form-container" class="o4 g2 container col center wrap">
+            </div>
+        </div>
+        <div id="return-heading" class="o2 g2 container center">Too High</div>
+        <div id="return-message" class="o3 g3 container center">You are very close to the number. Try Again.</div>
+        <div id="form-container" class="o4 g2 container col center wrap">
             <div id="form-heading" class="o1 center">Choose a Number between 1 and 100:</div>
-            <section id="form" class="o2 g1 container row center wrap">
+            <div id="form" class="o2 g1 container row center wrap">
                 <form class="o2 g1 33s" onsubmit="javascript:game();return false;"><input type="number" min="1" max="100" placeholder="1 - 100" name="input-num" id="input-num" /></form>
                 <button id="button-send" class="o3 g1 33s" type="button" onclick="game()">Send</button>
                 <button id="button-reset" class="o4 g1 33s" type="button" onclick="gameReset()">Restart</button>
-            </section> 
-        </section>
-        <section id="previous-heading" class="o5 g1 container center wrap">previous guesses in current game</section> 
-        <section id="previous-results" class="o5 g1 container center wrap">66, 33, 21</section>
-        </section>
-    </main>
+            </div> 
+        </div>
+        <div id="previous-heading" class="o5 g1 container center wrap">previous guesses in current game</div> 
+        <div id="previous-results" class="o5 g1 container center wrap">66, 33, 21</div>
+        </div>
+    </div>
 </body>
 </html>

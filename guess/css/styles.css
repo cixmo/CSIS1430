@@ -28,9 +28,9 @@ body {
 .s50 { flex-basis: 50%; }
 .s100 { flex-basis: auto; }
 
-header, main { width: 500px; padding: 15px; }
+div.header, div.viewport { width: 500px; padding: 15px; }
 
-header {
+div.header {
     height: 100px;
     font-size: 50px;
     text-align: center;
@@ -38,13 +38,13 @@ header {
     text-shadow: -1px 1px #ffffff;
 }
 
-main {
+div.viewport {
     height: 700px;
     background-color: #ffffff;
     border-radius: 5px;
 }
 
-section#hud-data, section#hud-label {
+div#hud-data, div#hud-label {
     align-items:flex-start;
     align-content:flex-start;
     width: 470px;
@@ -52,7 +52,7 @@ section#hud-data, section#hud-label {
     text-align: center;
 }
 
-section#hud-data {
+div#hud-data {
     height: 55px;
     padding-top: 10px;
     background-color: #cccccc;
@@ -62,7 +62,7 @@ section#hud-data {
     border-radius: 5px 5px 0 0;
 }
 
-section#hud-label {
+div#hud-label {
     height: 18px;
     padding-top: 5px;
     background-color: #888888;
@@ -72,7 +72,7 @@ section#hud-label {
     border-radius: 0 0 5px 5px;
 }
 
-section#return-heading, div#stop-heading {
+div#return-heading, div#stop-heading {
     align-items: flex-end;
     width: 470px;
     height: 40px;
@@ -80,7 +80,7 @@ section#return-heading, div#stop-heading {
     font-size: 30px;
 }
 
-section#return-message, div#stop-message {
+div#return-message, div#stop-message {
     align-items: flex-start;
     text-align: center;
     width: 470px;
@@ -89,7 +89,7 @@ section#return-message, div#stop-message {
     font-size: 20px;
 }
 
-section#form {
+div#form {
     align-content: flex-start;
 }
 
@@ -103,7 +103,7 @@ div#form-heading {
     text-align:center;
 }
 
-section#form input[type=number] {
+div#form input[type=number] {
     margin-right: 10px;
     padding: 12px;
     width: 250px;
@@ -136,7 +136,7 @@ button#button-reset {
     border-radius: 8px;
 }
 
-section#previous-heading, section#previous-results {
+div#previous-heading, div#previous-results {
     align-items:center;
     align-content:center;
     width: 470px;
@@ -144,7 +144,7 @@ section#previous-heading, section#previous-results {
     text-align: center;
 }
 
-section#previous-heading{
+div#previous-heading{
     height: 10px;
     padding-top: 5px;
     background-color: #888888;
@@ -154,7 +154,7 @@ section#previous-heading{
     border-radius: 5px 5px 0 0; 
 }
 
-section#previous-results{
+div#previous-results{
     height: 55px;
     padding-top: 2px;
     background-color: #cccccc;

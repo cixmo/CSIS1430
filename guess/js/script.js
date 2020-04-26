@@ -72,10 +72,10 @@ function gameProcess(type) {
     userPrevious.push(userGuess);
     document.getElementById("previous-results").innerHTML = userPrevious.join(', ');
     userGuess = null;
-    if (type == "xhigh") {
+    if (type == "too high") {
         document.getElementById("return-heading").innerHTML = "Way too High!";
         document.getElementById("return-message").innerHTML = "The number you selected was way too high above the selected number.";
-    } else if (type == "xlow") {
+    } else if (type == "too low") {
         document.getElementById("return-heading").innerHTML = "Way too Low!";
         document.getElementById("return-message").innerHTML = "The number you selected was way too low above the selected number.";
     } else if (type == "high") {
@@ -112,10 +112,10 @@ function game() {
                 document.getElementById("return-message").innerHTML = "The number you selected was out of the pool range.  Choose between 1 and " + confNumberMax + ".";
                 break;
             case userGuess >= gameNumber + confWideRange:
-                gameProcess("xhigh");
+                gameProcess("too high");
                 break;
             case userGuess <= gameNumber - confWideRange:
-                gameProcess("xlow");
+                gameProcess("too low");
                 break;
             case userGuess > gameNumber:
                 gameProcess("high");
