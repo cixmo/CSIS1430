@@ -54,10 +54,10 @@ function gameOver(type) {
     document.getElementById("hud-2").innerHTML = gameGuessLeft;
     document.getElementById("hud-3").innerHTML = gameCount;
     if (type == 'loss') {
-        document.getElementById("stop-heading").innerHTML = `You Lose, Game Over.`
+        document.getElementById("stop-heading").innerHTML = `You Lose, Game Over.`;
         document.getElementById("stop-message").innerHTML = `The number was ` + gameNumber + `.`;
     } else if (type == 'win') {
-        document.getElementById("stop-heading").innerHTML = `Congratulations! You Won!`
+        document.getElementById("stop-heading").innerHTML = `Congratulations! You Won!`;
         document.getElementById("stop-message").innerHTML = `The winning number was ` + gameNumber + `.`;
     }
     gameNumber = null;
