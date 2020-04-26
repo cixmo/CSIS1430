@@ -1,0 +1,12 @@
+main#viewport-start {
+    display: flex;
+    overflow: hidden;
+}
+
+main#viewport-game {
+    display: none;
+}
+
+main#viewport-stop {
+    display: none;
+}
