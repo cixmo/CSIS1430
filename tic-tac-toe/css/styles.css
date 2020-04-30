@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+* { 
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+}
+
+body {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; 
+}
+ 
+div#game, .info {
+    display: flex;
+    flex: none;
+    align-self: flex-end;
+    width: 480px;
+    overflow: hidden;
+}
+
+div#container {
+    z-index: 1;
+    flex-direction: column;
+    height: 600px;
+    width: 700px;
+    padding: 10px 110px;
+    background-image: url('../img/background.jpg');
+    background-size:cover;
+    border: 10px solid #1c1c1c;
+    border-radius: 12% 12% 12% 12% / 45% 45% 45% 45%;
+}
+
+div#game {
+    height: 400px;
+    order: 1;
+}
+
+.info {
+    flex: none;
+    flex-direction: column;
+    height: 150px;
+    padding: 10px;
+    order: 3;
+}
+
+div#cont-start {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+    background-image: url('../img/splash.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+div#cont-active {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 33.333333%;
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+div#restart {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    opacity: 90%;
+}
+
+.restart-in {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+.restart-out {
+    opacity: 90%;
+    transition: opacity 1000ms;
+}
+
+.restart-message {
+    flex:none;
+    order: 1;
+    height: 50px;
+    width: 700px;
+    font-size: 40px;
+    color: #8d8d8d;
+    text-align: center;
+}
+
+.restart-button {
+    flex: none;
+    height: 50px;
+    width: 300px;
+    order: 2;
+}
+
+div#cell-0 { order: 1; border-style: none solid solid none; }
+div#cell-1 { order: 2; border-style: none solid solid solid; }
+div#cell-2 { order: 3; border-style: none none solid solid; }
+div#cell-3 { order: 4; border-style: solid solid solid none; }
+div#cell-4 { order: 5; border-style: solid; }
+div#cell-5 { order: 6; border-style: solid none solid solid; }
+div#cell-6 { order: 7; border-style: solid solid none none; }
+div#cell-7 { order: 8; border-style: solid solid none solid; }
+div#cell-8 { order: 9; border-style: solid none none solid; }
+
+.cell, .win-p1 {
+    flex: none;
+    flex-grow: 1;
+    height: 100px;
+    width: 100px;
+}
+
+.cell { cursor: crosshair; border-color: #FFFFFF; }
+.marker-p1 { background: url('../img/player-one.png') no-repeat center; cursor: default; }
+.win-p1 {
+    background: seagreen url('../img/player-one.png') no-repeat center;
+    cursor: default;
+    border-color: rgb(138, 182, 157);
+    opacity: 10; 
+}
+.marker-p2 { background: url('../img/player-two.png') no-repeat center; cursor: default; }
+.win-p2 {
+    background: seagreen url('../img/player-two.png') no-repeat center;
+    cursor: default;
+    border-color: rgb(138, 182, 157);
+    opacity: 10; 
+}
+
+.message {
+    flex: none;
+    order: 1;
+    height: 40px;
+    width: 100%;
+    padding: 4px;
+    background-color: #000000;
+    font-size: 32px;
+    color: rgb(142, 173, 83);
+    
+}
+
+.info-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    order: 2;
+    margin-top: 10px;
+}
+
+.info-score-p1, .info-score-p2, .info-score-draw {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    padding: 4px;
+    border: 4px solid rgb(238, 146, 80);
+    border-radius: 2px;
+    background-color: #000000;
+    font-size: 22px;
+    color: rgb(142, 173, 83);
+}
+
+.info-score-p1 { order: 1; width: 190px; }
+.info-score-draw{ order: 2; }
+.info-score-p2 { order: 3; width: 190px; }
+
+
+
+
+
+
+div#start-form {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex: none;
+    height: 230px;
+    margin-top: 170px;
+
+}
+
+div#start-form input[type=text], button#button-start, button#button-restart {
+    flex: none;
+    font-size: 24px;
+    color: rgb(16, 99, 133);
+    background-color: rgba(119, 204, 238, 0.555);
+    border: 2px solid rgb(30, 145, 190);
+}
+
+div#start-form input[type=text] {
+    padding: 5px;
+    margin: 5px 0;
+    height: 40px;
+    width: 360px;
+}
+
+div#start-form label {
+    flex: none;
+    height: 40px;
+    width: 100px;
+    font-size: 24px; 
+}
+
+button#button-start { padding: 7px; margin: 15px 0 0 170px; }
+button#button-restart { padding: 7px; margin: 3px 0 0 87px; color: #ffffff;}
+label#label-player-1 { order: 1; }
+label#label-player-2 { order: 3; }
+input#input-player-1 { order: 2; }
+input#input-player-2 { order: 4; }

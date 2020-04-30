@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe &gt; Michael Williams</title>
+        <link rel="stylesheet" text="text/css" href="css/styles.css">
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <script src="js/script.js"></script>
+    </head>
+    <body onload="onLoad()">
+        <div id="container">
+            <div id="game">
+                <div id="cont-start">
+                    <div id="start-form">
+                        <form onsubmit="javascript:game();return false;">
+                            <label id="label-p1" for="input-p1">Player 1:</label>
+                            <input type="text" name="input-p1" id="input-p1" />
+                            <label id="label-p2" for="input-p2">Player 2:</label>
+                            <input type="text" name="input-p2" id="input-p2" />
+                            <button id="button-start" type="button" value="Start Game" onclick="game()">Start Game</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="cont-active" style="display: none;">
+                    <div id="cell-0" data-cell-index="0" class="cell"></div>
+                    <div id="cell-1" data-cell-index="1" class="cell"></div>
+                    <div id="cell-2" data-cell-index="2" class="cell"></div>
+                    <div id="cell-3" data-cell-index="3" class="cell"></div>
+                    <div id="cell-4" data-cell-index="4" class="cell"></div>
+                    <div id="cell-5" data-cell-index="5" class="cell"></div>
+                    <div id="cell-6" data-cell-index="6" class="cell"></div>
+                    <div id="cell-7" data-cell-index="7" class="cell"></div>
+                    <div id="cell-8" data-cell-index="8" class="cell"></div>
+                </div>
+                <div id="cont-stop" style="display: none;"></div>
+            </div>
+            <div class="info" style="display: none;">
+                <div class="message"></div>
+                <div class="info-score">
+                    <div class="info-score-p1">
+                        <div class="data-p1-wins"></div>
+                        <div class="data-p1-name"></div>
+                    </div>
+                    <div class="info-score-draw">
+                        <div class="data-draws"></div>
+                        <div>ties</div>
+                    </div>
+                    <div class="info-score-p2">
+                        <div class="data-p2-wins"></div>
+                        <div class="data-p2-name"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="restart" style="display: none;">
+            <div class="restart-message"></div>
+            <div class="restart-button"><button id="button-restart" type="button" onclick="gameClear()">Play Again?</button></div>
+        </div>
+    </body>
+</html>
