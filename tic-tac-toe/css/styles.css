@@ -27,6 +27,7 @@ div#game, .info {
 div#container {
     z-index: 1;
     flex-direction: column;
+    overflow: hidden;
     height: 600px;
     width: 700px;
     padding: 10px 110px;
