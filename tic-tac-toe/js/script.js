@@ -10,7 +10,7 @@ let testData = [0, "", ""];
 
 function onLoad() {
     let start = new Audio('game_start.mp3');
-    start.play();
+    setTimeout(start.play(), 2000);
 }
 
 function gameUpdateMessage(type) {
@@ -95,7 +95,7 @@ function gameProcessEvent() {
             document.getElementById("cell-" + i).removeEventListener("click", handleClickEvent);
         }
         gameCounter[gameCurrentPlayer] = gameCounter[gameCurrentPlayer] + 1;
-        gameCounter[3] = gameCounter[3] + 1;
+        gameCounter[0] = gameCounter[0] + 1;
         gameState = 2;
         gameUpdateMessage('win');
         gameUpdateDisplay();
