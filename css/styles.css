@@ -83,6 +83,15 @@ div#reflection p {
   color: #999893;
 }
 
+.tooltip-inner {
+  background-color: #45484B;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+  border-top-color: #45484B;
+}
+
+
 .slideanim {visibility:hidden;}
 .slide {
   /* The name of the animation */
