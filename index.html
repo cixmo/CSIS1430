@@ -1,19 +1,218 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Michael Williams' CSIS1430 Page.</title>
+        <title>Home &gt; Michael Williams (CSIS1430 - Spring 2020)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/icons.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
-        <h1>This is Michael Williams' page</h1>
-        <p>By the End of the semester, this page will be my FINAL PROJECT with links to ALL OF MY PROJECTS.</p>
-        <ul>
-            <li><a href="./tables/index.html">HTML Tables</a></li>
-            <li><a href="./pizza-1/index.html">Pizza Site</a></li>
-            <li><a href="./image-map/index.html">Image Map</a></li>
-            <li><a href="./horizontal-menu/index.html">Horizontal Menu</a></li>
-            <li><a href="./superheroes/index.html">Superheroes</a></li>
-            <li><a href="./little-boxes/index.html">Little Boxes</a></li>
-            <li><a href="./pizza-2/index.html">Pizza Site (Midterm)</a></li>
-            <li><a href="./js-birthday/index.html">JS Birthday</a></li>
-        </ul>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm">
+                <a class="navbar-brand ml-2 navbar-brand-custom" href="#">Michael Williams</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link btn mr-2" href="#"><i class="icon-home mr-2"></i>Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn mr-2" href="#projects"><i class="icon-code mr-2"></i>Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn mr-2" href="#reflection"><i class="icon-signature mr-2"></i>Reflection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="https://github.com/cixmo/CSIS1430" target="blank"><i class="icon-github mr-2"></i>GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="projects" class="container">
+            <h2 class="title-section">Projects</h2>
+            <div class="list-group">
+                <a href="tables/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">HTML Tables</h5>
+                            <p class="row text-muted">Site utilizing HTML Tables to proper display data from selected YouTube Videos.</p>
+                        </div>
+                        <p class="row built-with"><span class="icon-html5"></span></p>   
+                    </div>
+                </a>
+                <a href="image-map/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Image Map</h5>
+                            <p class="row text-muted">Image map using various forms of area types.</p>
+                        </div>
+                        <p class="row built-with"><span class="icon-html5"></span></p>   
+                    </div>
+                </a>
+                <a href="superheroes/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Superheroes</h5>
+                            <p class="row text-muted">Basic HTML document transformed by CSS styling.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span></p>   
+                    </div>
+                </a>
+                <a href="little-boxes/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Little Boxes</h5>
+                            <p class="row text-muted">Visual site utilizing div tags and CSS to generate a picture.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="horizontal-menu/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Horizontal Menu</h5>
+                            <p class="row text-muted">Horizontal navigation menu built with HTML and CSS without framework assistance.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="pizza-2/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Pizza Site (Midterm)</h5>
+                            <p class="row text-muted">Four page pizza site built in HTML and CSS; complete with order form.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="js-birthday/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">JS Birthday</h5>
+                            <p class="row text-muted">Simple variable collection example built in Pure JS.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-js-square mr-2"></span>
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="madlibs/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Mad Libs</h5>
+                            <p class="row text-muted">Adlib story generator built in Pure JS.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-js-square mr-2"></span>
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="lottery/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Lottery Number Generator</h5>
+                            <p class="row text-muted">Random lottery number array generator built in Pure JS.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-js-square mr-2"></span>
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="guess/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">The Guessing Game</h5>
+                            <p class="row text-muted">Numeric guessing game built in Pure JS.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-js-square mr-2"></span>
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="tic-tac-toe/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Tic Tac Toe</h5>
+                            <p class="row text-muted">Two player tic tac toe game built in Pure JS.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-js-square mr-2"></span>
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>   
+                    </div>
+                </a>
+                <a href="bootstrap/index.html" target="blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between pt-3">
+                        <div class="col-md-auto">
+                            <h5 class="row">Bootstrap Site (Band)</h5>
+                            <p class="row text-muted">Band landing page built with Bootstrap 4.4.1.</p>
+                        </div>
+                        <p class="row built-with">
+                            <span class="icon-bootstrap mr-2"></span>
+                            <span class="icon-js-square mr-2"></span>
+                            <span class="icon-css3-alt mr-2"></span>
+                            <span class="icon-html5"></span>
+                        </p>  
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="reflection" class="container slideanim mt-5">
+            <h2 class="title-section">Reflection</h1>
+            <div class="p-4">
+                <p>Throughout the CSIS1430 Course, I began to strengthen soft skills such as critical thinking, resilience, creative troubleshooting, and active learning. All are skills that are key to becoming a 
+                    fantastic developer because of the amount of stress that follows while engineering solutions to an impacting problem. The reintroduction of HTML and CSS kickstarted a faint but not entirely lost
+                     passion for creating digital media. While working through the JavaScript projects, since I began to notice a growing fluency that was not present in the past.  This newfound discovery opened 
+                     myself to the desire to learn as much as possible within the realms of development.</p>
+                <h5 class="text-center p-4">HTML</h5>
+                <p>One of the most valuable lessons that I learned from this class was HTML is considered to be a descriptive language. Until that moment, my previous work clobbered between HTML and CSS in a 
+                    butchered format. After a clear explanation of how to properly apply HTML descriptively, my mindset stood corrected forever.  In past experiences, my approach directly referenced HTML tags 
+                    by using ID or classes.  Quite often, I found myself using tags in a non-standard format.  This approach made factoring difficult for myself and others in the future.</p>
+                <h5 class="text-center p-4">CSS</h5>
+                <p>The most valuable lessons involving cascading stylesheets are the implementation of flexbox and specificities. Years before this course, my understanding of specificity was poor.  Due to the 
+                    poor understanding of specificity, it was a continuous battle when drafting designs. Most of the prior patches were driven by forum snippets that never clearly explained what was happening 
+                    and how to fix it properly. The instruction and guidance provided in this course have rectified past puzzling thoughts and future mental agony.
+                </p>
+                <h5 class="text-center p-4">JavaScript</h5>
+                <p>Before this course, I had no understanding of how to program JavaScript properly. The opinions fed by influences in the past stated JavaScript was terrible, and nobody uses it. This course 
+                    completely changed my outlook on JavaScript's capabilities. It was a handy tool that I avoided for years. One of the most valuable topics touched in this course was JavaScript's DOM.  The 
+                    ability to hook an HTML Document to JavaScript and modify document elements in real-time is a compelling feature.</p>
+                <h5 class="text-center p-4">Final Thoughts</h5>
+                <p>This course was a fantastic introduction back into a world I previously left in the mid-2000s.  I struggled with the lack of constructive criticism that would help reduce potential bad habits.  
+                    Beyond lacking feedback, the resources provided helped expand my knowledge. The direction provided a conduit to continue learning after this course ends.</p>
+            </div>
+        </div>
+        <div class="container text-center text-muted mt-5 mb-5">
+            &copy; 2020 Michael Williams, All Rights Reserved.
+        </div>
     </body>
 </html>
